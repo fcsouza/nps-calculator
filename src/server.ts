@@ -3,13 +3,13 @@ import express from 'express';
 const port = 3333;
 const app = express();
 
-app.get("/", (require, res) =>{
-    return res.json({message: "Tudo certo"});
+app.get("/", (request, response) =>{
+    return response.json({message: "Tudo certo"});
 });
 
 
-app.post("/", (require, res) =>{
-    return res.json({message: "Dados salvo com sucesso!!"});
+app.post("/", (request, response) =>{
+    return response.json({message: "Dados salvo com sucesso!!"});
 });
 
 
