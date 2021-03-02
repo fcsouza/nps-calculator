@@ -1,16 +1,3 @@
-import express from 'express';
+import { app } from "./app";
 
-const port = 3333;
-const app = express();
-
-app.get("/", (request, response) =>{
-    return response.json({message: "Tudo certo"});
-});
-
-
-app.post("/", (request, response) =>{
-    return response.json({message: "Dados salvo com sucesso!!"});
-});
-
-
-app.listen(port, () => console.log("Serve is running"));
+app.listen(3333, () => console.log("Server is running!"));
