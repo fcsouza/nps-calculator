@@ -1,7 +1,7 @@
 import { query } from "express";
 import { MigrationInterface, QueryRunner, Table } from "typeorm";
 
-export class CreateSurveys1614723969 implements MigrationInterface {
+export class CreateSurveys1614015788331 implements MigrationInterface {
   public async up(queryRunner: QueryRunner): Promise<void> {
     await queryRunner.createTable(
       new Table({
